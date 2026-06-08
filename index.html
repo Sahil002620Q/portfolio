@@ -1,31 +1,512 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
-   <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Welcome to my portfolio</title>
-       <link rel="stylesheet" href="style.css">
-   </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil | CSE Student & Developer</title>
+    <meta name="description" content="Portfolio of Sahil, a B.Tech CSE (AI & ML) student and developer specializing in AI, Machine Learning, network security, and high-performance frontend interfaces.">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-     <!-- The video will go here -->
-     <div class="video-container">
-       <video autoplay muted loop id="background-video">
-            <!-- Find free videos at sites like Pexels.com -->
-               <source src="sasuke.mp4" type="video/mp4">
-               Your browser does not support the video tag.
-           </video>
-       </div>
 
-     <!-- The content that overlays the video -->
-     <div class="content">
-           <h1>Hii, i'm Sahil </h1>
-           <p>Get in touch with me now</p>
-           <div class="button-container">
-               <a href="https://github.com/Sahil002620Q" class="btn" target="_blank">Git</a> 
-               <a href="https://www.instagram.com/sahil_002620q?igsh=MTJyYnIwODdwMnRibg==" class="btn">Instagram</a>
-              <a href="index2.html" class="btn" target="_blank">More</a>
-           </div>
-       </div>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="progressBar"></div>
 
- </body>
- </html>
+    <!-- Background Video & Overlay -->
+    <div class="video-container">
+        <video autoplay muted loop playsinline id="background-video">
+            <source src="sasuke.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="video-overlay"></div>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                SAHIL<span>NODE_01</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="4" y1="6" x2="20" y2="6"></line>
+                    <line x1="4" y1="18" x2="20" y2="18"></line>
+                </svg>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="status-dot"></span>
+                        ONLINE // ACTIVE_NODE
+                    </div>
+                    <h1 class="hero-title">Building Intelligent Systems</h1>
+                    <p class="hero-description">
+                        Hello, I'm Sahil. A Computer Science Engineering student specializing in AI, Machine Learning, and Network Infrastructure. Master of high-performance web frontends and clean systems engineering.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            View Systems
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                
+                <!-- Terminal Console Widget -->
+                <div class="console-widget">
+                    <div class="console-header">
+                        <div class="console-dots">
+                            <span class="console-dot red"></span>
+                            <span class="console-dot yellow"></span>
+                            <span class="console-dot green"></span>
+                        </div>
+                        <span class="console-title">sahil@portfolio:~</span>
+                        <span></span>
+                    </div>
+                    <div class="console-body">
+                        <p><span class="console-prompt">sahil@portfolio:~$</span> whoami</p>
+                        <p class="console-response">>> Student, AI-ML Specialization & Developer</p>
+                        <p style="margin-bottom: 12px;"></p>
+                        <p><span class="console-prompt">sahil@portfolio:~$</span> info --academic</p>
+                        <p class="console-response">>> B.Tech CSE (AI & ML) @ DAVIET, Jalandhar</p>
+                        <p class="console-response">>> Active Core Focus: Algorithms & System Networks</p>
+                        <p style="margin-bottom: 12px;"></p>
+                        <p><span class="console-prompt">sahil@portfolio:~$</span> status --system</p>
+                        <p class="console-success">>> Zorin OS Workstation: Online</p>
+                        <p class="console-success">>> Linux Kernel Compatibility: Ready</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="reveal">
+            <div class="section-header">
+                <span class="section-tag">01. Identity</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="glass-card about-grid">
+                <div class="about-text">
+                    <h3>Pioneering Intelligent Architectures</h3>
+                    <p>
+                        I am a 19-year-old developer pursuing a Bachelor of Technology in Computer Science & Engineering, specializing in Artificial Intelligence and Machine Learning under the TFW scheme in Jalandhar.
+                    </p>
+                    <p>
+                        My work revolves around scripting efficient modules in Python, writing optimized, low-level pointers in C, and building high-performance web systems. I am also deeply interested in network engineering, packet optimization, and secure configurations.
+                    </p>
+                </div>
+                <div class="about-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Affiliation</div>
+                        <div class="detail-value">DAVIET, Jalandhar</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Specialization</div>
+                        <div class="detail-value">CSE (AI & ML)</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Location</div>
+                        <div class="detail-value">Jalandhar, India</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Status</div>
+                        <div class="detail-value">Active Learner</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="reveal">
+            <div class="section-header">
+                <span class="section-tag">02. Stack</span>
+                <h2 class="section-title">Technical Expertise</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- AI / Machine Learning -->
+                <div class="glass-card skills-category">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                        AI & Data Science
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Model Design</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                    </div>
+                </div>
+
+                <!-- Development Languages -->
+                <div class="glass-card skills-category">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        Languages & Web
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C Language</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Zsh / Bash</span>
+                    </div>
+                </div>
+
+                <!-- Systems & Infrastructure -->
+                <div class="glass-card skills-category">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line></svg>
+                        Systems & Security
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Zorin OS</span>
+                        <span class="skill-tag">Kali Linux</span>
+                        <span class="skill-tag">WSL 2</span>
+                        <span class="skill-tag">TCP/IP Protocols</span>
+                        <span class="skill-tag">Network Security</span>
+                        <span class="skill-tag">Threat Mitigation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="reveal">
+            <div class="section-header">
+                <span class="section-tag">03. Systems</span>
+                <h2 class="section-title">Featured Work</h2>
+            </div>
+            <div class="projects-grid">
+                
+                <!-- Project 1: Dev Hub -->
+                <div class="glass-card project-card">
+                    <div class="project-preview">
+                        <div class="mockup-window">
+                            <div class="console-header" style="padding: 6px 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+                                <div class="console-dots">
+                                    <span class="console-dot red" style="width:6px; height:6px;"></span>
+                                    <span class="console-dot yellow" style="width:6px; height:6px;"></span>
+                                    <span class="console-dot green" style="width:6px; height:6px;"></span>
+                                </div>
+                                <span style="font-size:0.6rem; color:var(--text-muted);">dev-hub.sys</span>
+                                <span></span>
+                            </div>
+                            <div class="mockup-body" style="background: rgba(10, 10, 15, 0.9);">
+                                <span style="color:var(--primary);">[System Hub Active]</span>
+                                <span style="color:#666;">>> Fetching developers workflows...</span>
+                                <span style="color:var(--success);">>> Load success: 4 modules configured</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Dev Hub</h3>
+                        <p class="project-desc">
+                            An integrated ecosystem designed as a developer central command center, mapping workflows, quick reference guides, and system resources.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Workflow Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://sahil002620q.github.io/dev-hub/" target="_blank" class="project-btn project-btn-primary">
+                                Launch Live 
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                            <a href="https://github.com/Sahil002620Q/dev-hub" target="_blank" class="project-btn btn-secondary" style="padding: 6px 12px; font-size: 0.8rem; border-radius: 8px;">Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Dev Tools -->
+                <div class="glass-card project-card">
+                    <div class="project-preview">
+                        <div class="mockup-window">
+                            <div class="console-header" style="padding: 6px 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+                                <div class="console-dots">
+                                    <span class="console-dot red" style="width:6px; height:6px;"></span>
+                                    <span class="console-dot yellow" style="width:6px; height:6px;"></span>
+                                    <span class="console-dot green" style="width:6px; height:6px;"></span>
+                                </div>
+                                <span style="font-size:0.6rem; color:var(--text-muted);">dev-tools.sys</span>
+                                <span></span>
+                            </div>
+                            <div class="mockup-body" style="background: rgba(10, 10, 15, 0.9);">
+                                <span style="color:var(--secondary);">[Utility Dashboard]</span>
+                                <span style="color:#666;">>> Initializing code converters...</span>
+                                <span style="color:var(--success);">>> Status: Online (15+ utilities loaded)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Dev Tools</h3>
+                        <p class="project-desc">
+                            A comprehensive collection of web-based developer tools and utilities engineered to streamline daily coding workflows and boost efficiency.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Developer Tools</span>
+                            <span class="project-tag">Front-End</span>
+                            <span class="project-tag">Utilities</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://sahil002620q.github.io/dev-tools/" target="_blank" class="project-btn project-btn-primary">
+                                Launch Live 
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                            <a href="https://github.com/Sahil002620Q/dev-tools" target="_blank" class="project-btn btn-secondary" style="padding: 6px 12px; font-size: 0.8rem; border-radius: 8px;">Source</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="reveal">
+            <div class="section-header">
+                <span class="section-tag">04. Link</span>
+                <h2 class="section-title">Establish Link</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div>
+                        <p class="contact-p">
+                            Ready to collaborate on machine learning systems, Linux infrastructure optimization, or modern front-end interfaces.
+                        </p>
+                    </div>
+                    
+                    <div class="contact-channels">
+                        <!-- Email -->
+                        <a href="mailto:smax06388@gmail.com" class="contact-tile">
+                            <div class="contact-icon-wrapper">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-tile-details">
+                                <h4>Email Station</h4>
+                                <p>smax06388@gmail.com</p>
+                            </div>
+                        </a>
+                        
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/sahil002620q/" target="_blank" class="contact-tile">
+                            <div class="contact-icon-wrapper">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </div>
+                            <div class="contact-tile-details">
+                                <h4>LinkedIn Sys</h4>
+                                <p>in/sahil002620q</p>
+                            </div>
+                        </a>
+
+                        <!-- Discord -->
+                        <a href="https://discord.gg/CHzWdHdB" target="_blank" class="contact-tile">
+                            <div class="contact-icon-wrapper">
+                                <!-- Discord Custom Clean SVG Icon -->
+                                <svg width="20" height="20" viewBox="0 0 127.14 96.36" fill="currentColor">
+                                    <path d="M107.7,8.07A105.15,105.15,0,0,0,77.26,0a77.19,77.19,0,0,0-3.3,6.83A96.67,96.67,0,0,0,53.22,6.83,77.19,77.19,0,0,0,49.88,0,105.15,105.15,0,0,0,19.44,8.07C3.66,31.58-1.86,54.65,1,77.53a105.73,105.73,0,0,0,32,16.29,80.5,80.5,0,0,0,6.79-11.07,68.52,68.52,0,0,1-10.74-5.12c.91-.66,1.8-1.34,2.65-2a75.58,75.58,0,0,0,71,0c.85.7,1.74,1.38,2.65,2a68.68,68.68,0,0,1-10.74,5.12,80.4,80.4,0,0,0,6.79,11.07,105.73,105.73,0,0,0,32-16.29C129,54.65,123.5,31.58,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53S36.18,40.36,42.45,40.36,53.83,46,53.83,53,48.72,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.24,60,73.24,53S78.41,40.36,84.69,40.36,96.07,46,96.07,53,91,65.69,84.69,65.69Z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-tile-details">
+                                <h4>Discord Server</h4>
+                                <p>Join the server node</p>
+                            </div>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/sahil_002620q?igsh=MTJyYnIwODdwMnRibg==" target="_blank" class="contact-tile">
+                            <div class="contact-icon-wrapper">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </div>
+                            <div class="contact-tile-details">
+                                <h4>Instagram Protocol</h4>
+                                <p>@sahil_002620q</p>
+                            </div>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/Sahil002620Q" target="_blank" class="contact-tile">
+                            <div class="contact-icon-wrapper">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </div>
+                            <div class="contact-tile-details">
+                                <h4>GitHub Repository</h4>
+                                <p>Sahil002620Q</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card contact-form-container">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">IDENTITY / NAME</label>
+                            <input type="text" id="name" class="form-control" required placeholder="Enter your identity">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">COMMUNICATION / EMAIL</label>
+                            <input type="email" id="email" class="form-control" required placeholder="name@domain.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">TRANSMISSION / MESSAGE</label>
+                            <textarea id="message" class="form-control" required placeholder="Write your transmission..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; height: 50px;">
+                            Transmit Signal
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </form>
+                    <div id="formSuccess" style="display: none; height: 100%; text-align: center; justify-content: center; flex-direction: column; align-items: center; padding: 40px 0;">
+                        <div style="width: 64px; height: 64px; border-radius: 50%; background: rgba(16, 185, 129, 0.1); border: 2px solid var(--success); display: flex; align-items: center; justify-content: center; color: var(--success); margin-bottom: 20px;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px; color: #fff;">Signal Transmitted</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 300px;">Your transmission has been successfully routed to Sahil's local inbox node.</p>
+                        <button onclick="resetContactForm()" class="btn btn-secondary" style="margin-top: 25px; padding: 10px 20px; font-size: 0.85rem;">New Transmission</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">&copy; 2026 SAHIL // DIGITAL PORTFOLIO NODE // ALL SYSTEM DRIVERS RUNNING OPTIMALLY</p>
+            <p class="footer-node">JALANDHAR_NODE_01</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // 1. Navigation Menu Toggle (Mobile)
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            // Toggle hamburger icon to cross icon if menu is active
+            const isOpened = navMenu.classList.contains('active');
+            menuToggle.innerHTML = isOpened ? 
+                `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>` : 
+                `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>`;
+        });
+
+        // Close menu when links are clicked on mobile
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>`;
+            });
+        });
+
+        // 2. Scroll Indicator & Header Scroll Styling
+        const progressBar = document.getElementById('progressBar');
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            // Scroll Progress Line
+            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPercentage = (window.pageYOffset / windowHeight) * 100;
+            progressBar.style.width = scrollPercentage + '%';
+
+            // Shrink header on scroll
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            // Scroll Spy active navigation indicator
+            let fromTop = window.scrollY + 150;
+            
+            navLinks.forEach(link => {
+                let section = document.querySelector(link.hash);
+                
+                if (
+                    section.offsetTop <= fromTop &&
+                    section.offsetTop + section.offsetHeight > fromTop
+                ) {
+                    navLinks.forEach(n => n.classList.remove('active'));
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // 3. Scroll Reveal Animation using IntersectionObserver
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // Reveal once
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // 4. Contact Form Simulated Submit
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Collect form details for mockup purposes
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            console.log(`[Signal Sent] From: ${name} (${email}). Content: ${message}`);
+            
+            // Transition form out and display success page
+            contactForm.style.opacity = '0';
+            setTimeout(() => {
+                contactForm.style.display = 'none';
+                formSuccess.style.display = 'flex';
+                formSuccess.style.opacity = '0';
+                setTimeout(() => {
+                    formSuccess.style.opacity = '1';
+                }, 50);
+            }, 300);
+        });
+
+        function resetContactForm() {
+            contactForm.reset();
+            formSuccess.style.opacity = '0';
+            setTimeout(() => {
+                formSuccess.style.display = 'none';
+                contactForm.style.display = 'block';
+                setTimeout(() => {
+                    contactForm.style.opacity = '1';
+                }, 50);
+            }, 300);
+        }
+    </script>
+</body>
+</html>
