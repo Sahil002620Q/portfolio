@@ -9,6 +9,15 @@
 </head>
 <body>
 
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">SAHIL<span>.DEV</span></div>
+            <div class="loader-bar"><div class="loader-bar-fill" id="loaderBar"></div></div>
+            <p class="loader-text">Initializing systems...</p>
+        </div>
+    </div>
+
     <!-- Scroll Progress Indicator -->
     <div class="scroll-progress" id="progressBar"></div>
 
@@ -21,11 +30,14 @@
     </div>
     <div class="video-overlay"></div>
 
+    <!-- Floating Particles -->
+    <canvas id="particles" class="particles-canvas"></canvas>
+
     <!-- Header Navigation -->
     <header id="header">
         <div class="container nav-container">
             <a href="#" class="logo">
-                SAHIL<span>NODE_01</span>
+                SAHIL<span>.DEV</span>
             </a>
             
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
@@ -54,15 +66,18 @@
                 <div class="hero-content">
                     <div class="hero-badge">
                         <span class="status-dot"></span>
-                        ONLINE // ACTIVE_NODE
+                        Available for collaboration
                     </div>
-                    <h1 class="hero-title">Building Intelligent Systems</h1>
+                    <p class="hero-greeting">Hi, I'm Sahil</p>
+                    <h1 class="hero-title">
+                        I build <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+                    </h1>
                     <p class="hero-description">
-                        Hello, I'm Sahil. A Computer Science Engineering student specializing in AI, Machine Learning, and Network Infrastructure. Master of high-performance web frontends and clean systems engineering.
+                        Computer Science Engineering student specializing in AI, Machine Learning, and Network Infrastructure. Crafting high-performance web systems and intelligent solutions.
                     </p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">
-                            View Systems
+                            View Projects
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                         </a>
                         <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -99,7 +114,7 @@
         <!-- About Section -->
         <section id="about" class="reveal">
             <div class="section-header">
-                <span class="section-tag">01. Identity</span>
+                <span class="section-tag"></span>
                 <h2 class="section-title">About Me</h2>
             </div>
             <div class="glass-card about-grid">
@@ -136,7 +151,7 @@
         <!-- Skills Section -->
         <section id="skills" class="reveal">
             <div class="section-header">
-                <span class="section-tag">02. Stack</span>
+                <span class="section-tag"></span>
                 <h2 class="section-title">Technical Expertise</h2>
             </div>
             <div class="skills-grid">
@@ -192,7 +207,7 @@
         <!-- Projects Section -->
         <section id="projects" class="reveal">
             <div class="section-header">
-                <span class="section-tag">03. Systems</span>
+                <span class="section-tag"></span>
                 <h2 class="section-title">Featured Work</h2>
             </div>
             <div class="projects-grid">
@@ -285,7 +300,7 @@
         <!-- Contact Section -->
         <section id="contact" class="reveal">
             <div class="section-header">
-                <span class="section-tag">04. Link</span>
+                <span class="section-tag"></span>
                 <h2 class="section-title">Establish Link</h2>
             </div>
             <div class="contact-grid">
@@ -303,7 +318,7 @@
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                             </div>
                             <div class="contact-tile-details">
-                                <h4>Email Station</h4>
+                                <h4>Email</h4>
                                 <p>smax06388@gmail.com</p>
                             </div>
                         </a>
@@ -314,7 +329,7 @@
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                             </div>
                             <div class="contact-tile-details">
-                                <h4>LinkedIn Sys</h4>
+                                <h4>LinkedIn</h4>
                                 <p>in/sahil002620q</p>
                             </div>
                         </a>
@@ -328,8 +343,8 @@
                                 </svg>
                             </div>
                             <div class="contact-tile-details">
-                                <h4>Discord Server</h4>
-                                <p>Join the server node</p>
+                                <h4>Discord</h4>
+                                <p>Join the community</p>
                             </div>
                         </a>
 
@@ -339,7 +354,7 @@
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                             </div>
                             <div class="contact-tile-details">
-                                <h4>Instagram Protocol</h4>
+                                <h4>Instagram</h4>
                                 <p>@sahil_002620q</p>
                             </div>
                         </a>
@@ -350,7 +365,7 @@
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                             </div>
                             <div class="contact-tile-details">
-                                <h4>GitHub Repository</h4>
+                                <h4>GitHub</h4>
                                 <p>Sahil002620Q</p>
                             </div>
                         </a>
@@ -360,19 +375,19 @@
                 <div class="glass-card contact-form-container">
                     <form id="contactForm">
                         <div class="form-group">
-                            <label for="name" class="form-label">IDENTITY / NAME</label>
-                            <input type="text" id="name" class="form-control" required placeholder="Enter your identity">
+                            <label for="name" class="form-label">NAME</label>
+                            <input type="text" id="name" name="name" class="form-control" required placeholder="Your name">
                         </div>
                         <div class="form-group">
-                            <label for="email" class="form-label">COMMUNICATION / EMAIL</label>
-                            <input type="email" id="email" class="form-control" required placeholder="name@domain.com">
+                            <label for="email" class="form-label">EMAIL</label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="you@example.com">
                         </div>
                         <div class="form-group">
-                            <label for="message" class="form-label">TRANSMISSION / MESSAGE</label>
-                            <textarea id="message" class="form-control" required placeholder="Write your transmission..."></textarea>
+                            <label for="message" class="form-label">MESSAGE</label>
+                            <textarea id="message" name="message" class="form-control" required placeholder="Write your message..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; height: 50px;">
-                            Transmit Signal
+                        <button type="submit" id="submitBtn" class="btn btn-primary" style="width: 100%; justify-content: center; height: 50px;">
+                            Send Message
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                         </button>
                     </form>
@@ -380,9 +395,9 @@
                         <div style="width: 64px; height: 64px; border-radius: 50%; background: rgba(16, 185, 129, 0.1); border: 2px solid var(--success); display: flex; align-items: center; justify-content: center; color: var(--success); margin-bottom: 20px;">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
-                        <h3 style="font-size: 1.5rem; margin-bottom: 10px; color: #fff;">Signal Transmitted</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 300px;">Your transmission has been successfully routed to Sahil's local inbox node.</p>
-                        <button onclick="resetContactForm()" class="btn btn-secondary" style="margin-top: 25px; padding: 10px 20px; font-size: 0.85rem;">New Transmission</button>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px; color: #fff;">Message Sent!</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 300px;">Thanks for reaching out. I'll get back to you soon.</p>
+                        <button onclick="resetContactForm()" class="btn btn-secondary" style="margin-top: 25px; padding: 10px 20px; font-size: 0.85rem;">Send Another</button>
                     </div>
                 </div>
             </div>
@@ -392,27 +407,125 @@
 
     <footer>
         <div class="container">
-            <p class="footer-text">&copy; 2026 SAHIL // DIGITAL PORTFOLIO NODE // ALL SYSTEM DRIVERS RUNNING OPTIMALLY</p>
-            <p class="footer-node">JALANDHAR_NODE_01</p>
+            <p class="footer-text">&copy; 2026 SAHIL.DEV // ALL RIGHTS RESERVED</p>
+            <p class="footer-node">JALANDHAR, INDIA</p>
         </div>
     </footer>
 
     <!-- JavaScript Interactions -->
     <script>
-        // 1. Navigation Menu Toggle (Mobile)
+        // ========== LOADING SCREEN ==========
+        const loader = document.getElementById('loader');
+        const loaderBar = document.getElementById('loaderBar');
+        let progress = 0;
+        const loadInterval = setInterval(() => {
+            progress += Math.random() * 25 + 5;
+            if (progress >= 100) progress = 100;
+            loaderBar.style.width = progress + '%';
+            if (progress >= 100) {
+                clearInterval(loadInterval);
+                setTimeout(() => {
+                    loader.classList.add('loaded');
+                    document.body.classList.add('page-loaded');
+                }, 400);
+            }
+        }, 200);
+
+        // ========== FLOATING PARTICLES ==========
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 0.5;
+                this.speedX = (Math.random() - 0.5) * 0.4;
+                this.speedY = (Math.random() - 0.5) * 0.4;
+                this.opacity = Math.random() * 0.4 + 0.1;
+                this.color = Math.random() > 0.5 ? '168, 85, 247' : '6, 182, 212';
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+                    this.reset();
+                }
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(${this.color}, ${this.opacity})`;
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < 60; i++) {
+            particles.push(new Particle());
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        // ========== TYPING ANIMATION ==========
+        const phrases = ['Intelligent Systems', 'Web Interfaces', 'AI Solutions', 'Secure Networks'];
+        const typedText = document.getElementById('typedText');
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            const current = phrases[phraseIndex];
+            if (isDeleting) {
+                typedText.textContent = current.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typedText.textContent = current.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let speed = isDeleting ? 40 : 80;
+
+            if (!isDeleting && charIndex === current.length) {
+                speed = 2000; // Pause at end
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                speed = 400; // Pause before next phrase
+            }
+
+            setTimeout(typeEffect, speed);
+        }
+        typeEffect();
+
+        // ========== NAVIGATION ==========
         const menuToggle = document.getElementById('menuToggle');
         const navMenu = document.getElementById('navMenu');
 
         menuToggle.addEventListener('click', () => {
             navMenu.classList.toggle('active');
-            // Toggle hamburger icon to cross icon if menu is active
             const isOpened = navMenu.classList.contains('active');
             menuToggle.innerHTML = isOpened ? 
                 `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>` : 
                 `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>`;
         });
 
-        // Close menu when links are clicked on mobile
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
@@ -421,79 +534,86 @@
             });
         });
 
-        // 2. Scroll Indicator & Header Scroll Styling
+        // ========== SCROLL EFFECTS ==========
         const progressBar = document.getElementById('progressBar');
         const header = document.getElementById('header');
 
         window.addEventListener('scroll', () => {
-            // Scroll Progress Line
             const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrollPercentage = (window.pageYOffset / windowHeight) * 100;
             progressBar.style.width = scrollPercentage + '%';
 
-            // Shrink header on scroll
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
             }
 
-            // Scroll Spy active navigation indicator
             let fromTop = window.scrollY + 150;
-            
             navLinks.forEach(link => {
                 let section = document.querySelector(link.hash);
-                
-                if (
-                    section.offsetTop <= fromTop &&
-                    section.offsetTop + section.offsetHeight > fromTop
-                ) {
+                if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
                     navLinks.forEach(n => n.classList.remove('active'));
                     link.classList.add('active');
                 }
             });
         });
 
-        // 3. Scroll Reveal Animation using IntersectionObserver
+        // ========== SCROLL REVEAL ==========
         const revealElements = document.querySelectorAll('.reveal');
-        
         const revealObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
-                    observer.unobserve(entry.target); // Reveal once
+                    observer.unobserve(entry.target);
                 }
             });
-        }, {
-            threshold: 0.15
-        });
-
+        }, { threshold: 0.15 });
         revealElements.forEach(el => revealObserver.observe(el));
 
-        // 4. Contact Form Simulated Submit
+        // ========== CONTACT FORM (Web3Forms) ==========
         const contactForm = document.getElementById('contactForm');
         const formSuccess = document.getElementById('formSuccess');
+        const submitBtn = document.getElementById('submitBtn');
 
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
-            // Collect form details for mockup purposes
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<span class="loader-spinner"></span> Sending...`;
 
-            console.log(`[Signal Sent] From: ${name} (${email}). Content: ${message}`);
-            
-            // Transition form out and display success page
-            contactForm.style.opacity = '0';
-            setTimeout(() => {
-                contactForm.style.display = 'none';
-                formSuccess.style.display = 'flex';
-                formSuccess.style.opacity = '0';
-                setTimeout(() => {
-                    formSuccess.style.opacity = '1';
-                }, 50);
-            }, 300);
+            const formData = {
+                access_key: '56b9dff3-2189-4197-850b-dfb8947080d8',
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value,
+                subject: 'New message from portfolio — SAHIL.DEV'
+            };
+
+            try {
+                const res = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+                const data = await res.json();
+
+                if (data.success) {
+                    contactForm.style.opacity = '0';
+                    setTimeout(() => {
+                        contactForm.style.display = 'none';
+                        formSuccess.style.display = 'flex';
+                        formSuccess.style.opacity = '0';
+                        setTimeout(() => { formSuccess.style.opacity = '1'; }, 50);
+                    }, 300);
+                } else {
+                    alert('Something went wrong. Please try again.');
+                }
+            } catch (err) {
+                alert('Network error. Please check your connection.');
+            }
+
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = `Send Message <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>`;
         });
 
         function resetContactForm() {
@@ -502,9 +622,7 @@
             setTimeout(() => {
                 formSuccess.style.display = 'none';
                 contactForm.style.display = 'block';
-                setTimeout(() => {
-                    contactForm.style.opacity = '1';
-                }, 50);
+                setTimeout(() => { contactForm.style.opacity = '1'; }, 50);
             }, 300);
         }
     </script>
